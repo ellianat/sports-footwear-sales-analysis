@@ -18,7 +18,7 @@ CREATE TABLE products (
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
     customer_id INT,
-    orer_date DATE,
+    order_date DATE,
     payment VARCHAR(20),
     channel VARCHAR(20),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
