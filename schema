@@ -1,4 +1,3 @@
-```sql
 CREATE TABLE customers (
     customer_id INT PRIMARY KEY,
     income_lvl VARCHAR(10),
@@ -36,4 +35,3 @@ CREATE TABLE order_items (
     FOREIGN KEY (order_id) REFERENCES orders(order_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
-```
