@@ -42,7 +42,7 @@ GROUP BY country
 ORDER BY COUNT(country);
 
 -- total revenue by month
-SELECT DATE_FORMAT(orer_date, '%Y-%m') AS month, SUM(total_sale) AS revenue FROM order_items
+SELECT DATE_FORMAT(order_date, '%Y-%m') AS month, SUM(total_sale) AS revenue FROM order_items
 JOIN orders
 ON order_items.order_id = orders.order_id
 GROUP BY month
